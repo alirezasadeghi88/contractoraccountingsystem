@@ -34,7 +34,18 @@ public class MainApp {
             int choice = scanner.nextInt();
             scanner.nextLine();
 
+            switch (choice){
 
+
+
+
+
+
+
+
+
+
+            }
         }
     }
 }

@@ -36,7 +36,24 @@ public class MainApp {
 
             switch (choice){
 
+                case 1 ->{
+                    System.out.print("Project Name: ");
+                    String name = scanner.nextLine();
 
+                    System.out.print("Employer: ");
+                    String employer = scanner.nextLine();
+
+                    System.out.print("start: ");
+                    String start = scanner.nextLine();
+
+                    System.out.print("Start Date (YYYY-MM-DD");
+                    String end = scanner.nextLine();
+
+                    System.out.print("Contract Amount: ");
+                    double amount = scanner.nextDouble();
+
+                    projectDAO.addProject(name, employer, start, end,amount);
+                }
 
 
 

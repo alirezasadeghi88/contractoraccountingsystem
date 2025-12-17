@@ -1,6 +1,9 @@
 package ir.university.accounting.util;
 
 import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.Collection;
 import java.util.Properties;
 
 public class DBConnection {
@@ -22,8 +25,14 @@ public class DBConnection {
        password = properties.getProperty("db.password");
 
        Class.forName(properties.getProperty("db.driver"));
+
     } catch (Exception e) {
-        throw new RuntimeException(e);
+        System.out.println("Database configuration error❌ ");
+        e.printStackTrace();
     }
+    }
+
+    public static Connection getConnection() throws Exception {
+        return DriverManager.getConnection( url, user, password);
     }
 }

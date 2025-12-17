@@ -87,7 +87,11 @@ public class MainApp {
                     paymentDAO.addPayment(pid, amt, date);
                 }
 
-
+                case 4 ->{
+                    System.out.print("Project ID: ");
+                    int pid = scanner.nextInt();
+                    reportDAO.printReport(pid);
+                }
 
 
             }

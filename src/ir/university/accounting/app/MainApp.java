@@ -55,7 +55,23 @@ public class MainApp {
                     projectDAO.addProject(name, employer, start, end,amount);
                 }
 
+                case 2 ->{
+                    System.out.print("Project ID: ");
+                    int pid = scanner.nextInt();
+                    scanner.nextLine();
 
+                    System.out.print("Description: ");
+                    String desc = scanner.nextLine();
+
+                    System.out.print("Amount: ");
+                    double amt = scanner.nextDouble();
+                    scanner.nextLine();
+
+                    System.out.print("Date (YYYY-MM-DD): ");
+                    String date = scanner.nextLine();
+
+                    expenseDAO.addExpense(pid, desc, amt, date);
+                }
 
 
 

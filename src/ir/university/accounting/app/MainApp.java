@@ -43,10 +43,10 @@ public class MainApp {
                     System.out.print("Employer: ");
                     String employer = scanner.nextLine();
 
-                    System.out.print("start: ");
+                    System.out.print("Start Date (YYYY-MM-DD): ");
                     String start = scanner.nextLine();
 
-                    System.out.print("Start Date (YYYY-MM-DD)");
+                    System.out.print("End Date (YYYY-MM-DD)");
                     String end = scanner.nextLine();
 
                     System.out.print("Contract Amount: ");
@@ -82,6 +82,9 @@ public class MainApp {
                     scanner.nextLine();
 
                     System.out.print("Date (YYYY-MM-DD): ");
+
+
+
                     String date = scanner.nextLine();
 
                     paymentDAO.addPayment(pid, amt, date);

@@ -18,11 +18,22 @@ public class MainApp {
         PaymentDAO paymentDAO = new PaymentDAO();
         ReportDAO reportDAO = new ReportDAO();
 
+        while (true){
+            System.out.println("""
+                ==============================
+                Contractor Accounting System
+                ==============================
+                1. Add Project
+                2. Add Expense
+                3. Add Payment
+                4. Project Financial Report
+                5. Exit
+                Choose:
+                """);
 
 
 
 
-
-
+        }
     }
 }

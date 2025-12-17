@@ -24,5 +24,18 @@ public class ReportDAO {
         return 0;
     }
 
+    public void printReport(int projectId) {
 
+        try {
+            double expenses = getSum("expenses",projectId);
+            double payments = getSum("payments", projectId);
+
+            System.out.println("====== Financial Report ======");
+            System.out.println("Total Expenses: " + expenses);
+            System.out.println("Total Payments: " + payments);
+            System.out.println("Profit / Loss: " + (payments -expenses));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

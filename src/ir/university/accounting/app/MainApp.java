@@ -46,7 +46,7 @@ public class MainApp {
                     System.out.print("start: ");
                     String start = scanner.nextLine();
 
-                    System.out.print("Start Date (YYYY-MM-DD");
+                    System.out.print("Start Date (YYYY-MM-DD)");
                     String end = scanner.nextLine();
 
                     System.out.print("Contract Amount: ");
@@ -93,7 +93,10 @@ public class MainApp {
                     reportDAO.printReport(pid);
                 }
 
-
+                case 5 ->{
+                    System.out.print("👋 Exit");
+                    System.exit(0);
+                }
             }
         }
     }

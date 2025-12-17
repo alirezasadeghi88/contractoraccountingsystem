@@ -3,7 +3,6 @@ package ir.university.accounting.util;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.util.Collection;
 import java.util.Properties;
 
 public class DBConnection {
